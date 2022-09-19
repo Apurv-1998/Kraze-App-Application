@@ -38,8 +38,13 @@ is already encountered then the delay will not be there and coordinates will be 
   b) Go to Body -> form-data<br>
   c) In the Key select file and add key as ``` DataFile ```<br>
   d) In the value upload the file containing locations<br>
-  
-  
+ 
+ 
+ ## Assumptions:
+ 
+ 1) Since the API was returning multiple coordinates for a particular location so selected only the first of them to be diplayed in the ouput
+ 
+ 
 ## Additional Info:
 
 1) All the working screenshots have been added in the scrrenshots folder

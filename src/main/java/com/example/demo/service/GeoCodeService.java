@@ -52,6 +52,11 @@ public class GeoCodeService {
 				ObjectMapper mapper = new ObjectMapper();
 				
 				ResponseDTO apiResponse = mapper.readValue(response, ResponseDTO.class);
+				
+				/*
+				Since the API was returning multiple coordinates for a particular location so selecting
+				only one of them
+				*/
 				if(apiResponse.getData().size()>1) {
 					ResponseObject object = apiResponse.getData().get(0);
 					apiResponse.getData().clear();
